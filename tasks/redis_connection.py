@@ -5,7 +5,7 @@ def main():
     host = 'c-c9q3qaothd9jum1o9cgt.rw.mdb.yandexcloud.net'
     port = 6380
     password = 'mustdayker_redis_password'
-    ca_path = 'c:/Users/mustd/.redis/YandexInternalRootCA.crt'
+    ca_path = 'c:/GitHub/data_engineer/09_yandex_cloud/cert/.redis/YandexInternalRootCA.crt'
 
 # инициализируем клиент, с помощью которого будем подключаться к Redis
     client = redis.StrictRedis(
