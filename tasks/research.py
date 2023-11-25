@@ -1,10 +1,10 @@
 import redis
 
 def main():
-    host = 'c-c9q3qaothd9jum1o9cgt.rw.mdb.yandexcloud.net'
+    host = 'c-c9qouu38glg6oa5asodd.rw.mdb.yandexcloud.net'
     port = 6380
     password = 'mustdayker_redis_password'
-    ca_path = 'c:/Users/mustd/.redis/YandexInternalRootCA.crt'
+    ca_path = 'c:/GitHub/data_engineer/09_yandex_cloud/cert/.redis/YandexInternalRootCA.crt'
 
     client = redis.StrictRedis(
             host=host,
@@ -13,7 +13,7 @@ def main():
             ssl=True,
             ssl_ca_certs=ca_path)
 
-    result = client.get("626a81ce9a8cd1920641e264")
+    result = client.get("mustdayker")
     if not result:
         print("Запись с указанным ключом не найдена.")
         return

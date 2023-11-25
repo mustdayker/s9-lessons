@@ -9,7 +9,7 @@ def error_callback(err):
 
 def main():
 # Установка параметров консьюмера
-    host = 'rc1a-4fb44c03lgap7fli.mdb.yandexcloud.net'
+    host = 'rc1a-93jto5vap3spn3u6.mdb.yandexcloud.net'
     port = 9091
     user = 'producer_consumer'
     password = 'mustdayker_kafka_password'

@@ -2,7 +2,7 @@ import redis
 
 def main():
 # указываем параметры, которые необходимы для подключения
-    host = 'c-c9q3qaothd9jum1o9cgt.rw.mdb.yandexcloud.net'
+    host = 'c-c9qouu38glg6oa5asodd.rw.mdb.yandexcloud.net'
     port = 6380
     password = 'mustdayker_redis_password'
     ca_path = 'c:/GitHub/data_engineer/09_yandex_cloud/cert/.redis/YandexInternalRootCA.crt'
