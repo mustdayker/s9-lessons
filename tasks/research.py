@@ -13,13 +13,21 @@ def main():
             ssl=True,
             ssl_ca_certs=ca_path)
 
-    result = client.get("mustdayker")
+
+    keys = client.keys('*')
+    for key in keys:
+        print(key.decode())
+
+    result = client.get("a51e4e31ae4602047ec52534")
+
     if not result:
         print("Запись с указанным ключом не найдена.")
         return
 
     result = result.decode("utf-8")
     print(result)
+
+
 
 if __name__ == '__main__':
     main()
